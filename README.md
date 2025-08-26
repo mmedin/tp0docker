@@ -11,6 +11,8 @@ Es un ejercicio corto y sirve como base para empezar el TP cuatrimestral.
 **IMPORTANTE**: Este repositorio contiene la documentación oficial del TP0 en:
 **[https://docs.utnso.com.ar/primeros-pasos/tp0](https://docs.utnso.com.ar/primeros-pasos/tp0)**
 
+**Repositorio oficial original**: **[https://github.com/sisoputnfrba/tp0](https://github.com/sisoputnfrba/tp0)**
+
 Sigue la guía oficial para completar el TP0. Este repositorio solo agrega configuración de Docker.
 
 ## 🐳 Configuración Docker (Opcional)

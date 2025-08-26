@@ -69,12 +69,6 @@ Las opciones 2 y 3 de nuestros scripts (`Acceder a server` y `Acceder a client`)
 - **Propuesta original**: Los alumnos clonan el repo dentro de las VMs y usan VS Code desde otra virtual con entorno gráfico
 - **Configuración Docker**: Los alumnos clonan el repo en sus máquinas locales, usan VS Code localmente, y los containers tienen mapeadas las carpetas `client` y `server` como volúmenes
 
-**Ventajas de esta configuración:**
-- ✅ **Desarrollo más cómodo**: VS Code con todas sus funcionalidades
-- ✅ **No hay que clonar desde dentro**: El código ya está disponible en los containers
-- ✅ **Cambios en tiempo real**: Los cambios en VS Code se reflejan inmediatamente en los containers
-- ✅ **Mejor experiencia de desarrollo**: Autocompletado, debugging, y herramientas modernas
-
 ## Consigna
 
 Podés encontrar la consigna en el siguiente [link].

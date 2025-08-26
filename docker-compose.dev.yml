@@ -1,0 +1,38 @@
+services:
+  server-dev:
+    build: .
+    container_name: tp0-server-dev
+    volumes:
+      - ./server:/workspace/server
+      - ./client:/workspace/client
+    working_dir: /workspace/server
+    ports:
+      - "8080:8080"
+    networks:
+      - tp0-network
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+    environment:
+      - DEBIAN_FRONTEND=noninteractive
+
+  client-dev:
+    build: .
+    container_name: tp0-client-dev
+    volumes:
+      - ./client:/workspace/client
+      - ./server:/workspace/server
+    working_dir: /workspace/client
+    depends_on:
+      - server-dev
+    networks:
+      - tp0-network
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+    environment:
+      - DEBIAN_FRONTEND=noninteractive
+
+networks:
+  tp0-network:
+    driver: bridge

@@ -1,0 +1,39 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Scripts (no necesarios en el container)
+tp0.sh
+tp0.bat
+
+# Binarios y objetos (se generan en runtime)
+**/bin/
+**/obj/
+**/*.o
+**/*.a
+**/*.so
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# README
+README.md
